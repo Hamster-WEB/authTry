@@ -1,0 +1,560 @@
+/* Сброс стилей */
+
+body {
+  background-color: #F4F5FC;
+}
+
+h1, h2, h3, h4, h5, h6, p{
+    margin: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    overflow: hidden;
+}
+
+*
+{
+    box-sizing: border-box;
+}
+
+/**/
+
+/* Подключение шрифтов */
+
+@font-face {
+  font-family: WorkSans;
+  src: url(./fonts/WorkSans-Medium.otf)
+}
+
+@font-face {
+  font-family: PTSans;
+  src: url(./fonts/PT_Sans-Web-Regular.ttf)
+}
+
+/**/
+
+/* Окно регистрации */
+
+.reg-window {
+  max-width: 742px;
+  min-height: 502px;
+  display: flex;
+  transform: translate(-50%,-50%);
+  left: 50%;
+  top: 50%;
+  position: absolute;
+}
+
+.formDiv {
+  display: flex;
+}
+
+.reg-left {
+  width: 171px;
+  min-height: 481px;
+  display: flex;
+  background-color: #5A61ED;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding-left: 6px;
+  padding-bottom: 30px;
+}
+
+.regLeft-title {
+  width: 165px;
+  height: 138px;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: flex-end;
+  transform: rotate(270deg);
+}
+
+.reg-title {
+  font-family: PTSans;
+  font-size: 49px;
+  line-height: 60px;
+  color: #FFF;
+  font-weight: 400;
+  margin: 0 0;
+  position: absolute;
+}
+
+.reg-right {
+  max-width: 567px;
+  min-height: 502px;
+  padding: 20px 20px;
+  padding-top: 38px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("./img/form-background.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.regRight-wrapper {
+  width: 540px;
+  min-height: 482px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  position: relative;
+}
+
+.regRight-title {
+  font-size: 22px;
+  line-height: 22px;
+  font-family: WorkSans;
+  color: #111;
+  font-weight: bold;
+}
+
+.regRight-subtitle {
+  font-size: 14px;
+  line-height: 17px;
+  font-family: WorkSans;
+  color: #111;
+  font-weight: 400;
+}
+
+.reg-form {
+  max-width: 540px;
+  min-height: 430px;
+  display: flex;
+  flex-direction: column;
+}
+
+.regForm-left {
+  width: 270px;
+  min-height: 390px;
+}
+
+.regForm-right {
+  width: 270px;
+  min-height: 390px;
+}
+
+.regFormLeft-input-wrapper {
+  width: 234px;
+  height: 30px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 16px;
+  background: transparent;
+  position: relative;
+}
+
+.regFormLeft-input-wrapper-title {
+  font-family: WorkSans;
+  font-size: 12px;
+  font-weight: 400;
+  color: #7C7C7C;
+  padding-top: 5px;
+  transition: all 0.5s;
+}
+
+.regFormLeft-input {
+  width: 234px;
+  height: 25px;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: 1px solid #F2F2F2;
+  transition: all 0.5s;
+  font-size: 14px;
+  color: #111;
+  line-height: 16px;
+  font-family: WorkSans;
+  font-weight: 400;
+  padding-bottom: 5px;
+  background: transparent;
+}
+
+.regFormLeft-inputN {
+  width: 234px;
+  height: 25px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #F2F2F2;
+  border-top: 1px solid #FFF;
+  border-left: 1px solid #FFF;
+  border-right: 1px solid #FFF;
+  transition: all 0.5s;
+  font-size: 14px;
+  color: #111;
+  line-height: 16px;
+  font-family: WorkSans;
+  font-weight: 400;
+  display: block;
+  background: transparent;
+  cursor: pointer;
+}
+
+.correct-icon {
+  position: absolute;
+  right: 0;
+  top: 60%;
+  opacity: 0;
+  transition: all 0.5s;
+}
+
+.correct-icon1 {
+  position: absolute;
+  right: 0;
+  top: 60%;
+  opacity: 0;
+  transition: all 0.5s;
+}
+
+body .regFormLeft-input-wrapper .corrIconActive {
+  opacity: 1;
+  transition: all 0.5s;
+}
+
+.correct-icon2 {
+  position: absolute;
+  right: 0;
+  top: 60%;
+  opacity: 0;
+  transition: all 0.5s;
+}
+
+.correct-icon3 {
+  position: absolute;
+  right: 0;
+  top: 60%;
+  opacity: 0;
+  transition: all 0.5s;
+}
+
+.correct-icon4 {
+  position: absolute;
+  right: 0;
+  top: 60%;
+  opacity: 0;
+  transition: all 0.5s;
+}
+
+.regFormLeft-inputN:hover {
+  outline: none;
+  border-bottom: 1px solid #e5e5e5;
+  transition: all 0.5s;
+}
+
+.regFormLeft-inputN:focus {
+  outline: none;
+  border-bottom: 1px solid #d4d4d4;
+  transition: all 0.5s;
+}
+
+.regFormLeft-input:hover {
+  outline: none;
+  border-bottom: 1px solid #e5e5e5;
+  transition: all 0.5s;
+}
+
+.regFormLeft-input:focus {
+  outline: none;
+  border-bottom: 1px solid #d4d4d4;
+  transition: all 0.5s;
+}
+
+.regFormLeft-input-wrapper-D {
+  width: 234px;
+  height: 30px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 16px;
+  background: transparent;
+}
+
+.regFormLeft-input-datbN {
+  width: 56px;
+  height: 25px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #F2F2F2;
+  border-top: 1px solid #FFF;
+  border-left: 1px solid #FFF;
+  border-right: 1px solid #FFF;
+  transition: all 0.5s;
+  font-size: 14px;
+  color: #111;
+  line-height: 16px;
+  font-family: WorkSans;
+  font-weight: 400;
+  background: transparent;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.regFormLeft-input-datbM {
+  width: 103px;
+  height: 25px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #F2F2F2;
+  border-top: 1px solid #FFF;
+  border-left: 1px solid #FFF;
+  border-right: 1px solid #FFF;
+  transition: all 0.5s;
+  font-size: 14px;
+  color: #111;
+  line-height: 16px;
+  font-family: WorkSans;
+  font-weight: 400;
+  background: transparent;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.regFormLeft-input-datbY {
+  width: 67px;
+  height: 25px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #F2F2F2;
+  border-top: 1px solid #FFF;
+  border-left: 1px solid #FFF;
+  border-right: 1px solid #FFF;
+  transition: all 0.5s;
+  font-size: 14px;
+  color: #111;
+  line-height: 16px;
+  font-family: WorkSans;
+  font-weight: 400;
+  background: transparent;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.formDis {
+  opacity: 0;
+  transition: all 0.5s;
+}
+
+.regEndText {
+  opacity: 0;
+  width: 540px;
+  display: flex;
+  flex-direction: column;
+}
+
+.regEndText-title {
+  font-size: 22px;
+  font-family: WorkSans;
+  font-weight: 500;
+}
+
+.regEndText-text {
+  font-size: 14px;
+  font-family: WorkSans;
+  font-weight: lighter;
+  padding-top: 11px;
+}
+
+.regEndText.active {
+  opacity: 1;
+}
+
+body .regRight-wrapper.active {
+  justify-content: center;
+}
+
+.regFormLeft-input-datbN:hover {
+  outline: none;
+  border-bottom: 1px solid #e5e5e5;
+  transition: all 0.5s;
+}
+
+.regFormLeft-input-datN:focus {
+  outline: none;
+  border-bottom: 1px solid #d4d4d4;
+  transition: all 0.5s;
+}
+
+.regFormLeft-input-datbM:hover {
+  outline: none;
+  border-bottom: 1px solid #e5e5e5;
+  transition: all 0.5s;
+}
+
+.regFormLeft-input-datbM:focus {
+  outline: none;
+  border-bottom: 1px solid #d4d4d4;
+  transition: all 0.5s;
+}
+
+.regFormLeft-input-datbY:hover {
+  outline: none;
+  border-bottom: 1px solid #e5e5e5;
+  transition: all 0.5s;
+}
+
+.regFormLeft-input-datbY:focus {
+  outline: none;
+  border-bottom: 1px solid #d4d4d4;
+  transition: all 0.5s;
+}
+
+#genDiv {
+  padding-top: 6px;
+}
+
+.inputRadioGender {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.inputRadioGender+label {
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+}
+
+.inputRadioGender+label::before {
+  content: '';
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  flex-shrink: 0;
+  flex-grow: 0;
+  border: 1px solid #adb5bd;
+  border-radius: 50%;
+  margin-right: 0.5em;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50% 50%;
+  cursor: pointer;
+}
+
+/* стили при наведении курсора на радио */
+
+.inputRadioGender:not(:disabled):not(:checked)+label:hover::before {
+  border-color: #5A61ED;
+}
+
+/* стили для активной радиокнопки (при нажатии на неё) */
+
+.inputRadioGender:not(:disabled):active+label::before {
+  background-color: #5A61ED;
+  border-color: #5A61ED;
+}
+
+/* стили для радиокнопки, находящейся в фокусе и не находящейся в состоянии checked */
+
+.inputRadioGender:focus:not(:checked)+label::before {
+  border-color: #5A61ED;
+}
+
+/* стили для радиокнопки, находящейся в состоянии checked */
+
+.inputRadioGender:checked+label::before {
+  border-color: #636af2;
+  background-color: #636af2;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e");
+}
+
+/* стили для радиокнопки, находящейся в состоянии disabled */
+
+.inputRadioGender:disabled+label::before {
+  background-color: #e9ecef;
+}
+
+/* Стили для текста radio */
+
+.radioGentitle {
+  font-family: WorkSans;
+  line-height: 16px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #111;
+  cursor: pointer;
+}
+
+/* Подвал формы */
+
+.formFooter {
+  max-width: 540px;
+  min-height: 50;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.formFooter-text-wrapper {
+  display: flex;
+}
+
+.formFooter-text {
+  font-family: WorkSans;
+  font-weight: 200;
+  font-size: 14px;
+  line-height: 15px;
+  color: #111;
+}
+
+.formFooter-text-wrapper a{
+  font-family: WorkSans;
+  font-weight: 200;
+  font-size: 14px;
+  line-height: 15px;
+  color: #5A61ED;
+  padding-left: 5px;
+  cursor: pointer;
+  transition: all 0.5s;
+  text-decoration: none;
+  position: relative;
+}
+
+.formFooter-text-wrapper a::before {
+  width: 90%;
+  height: 1px;
+  background-color: #5A61ED;
+  display: block;
+  content: "";
+  position: absolute;
+  top: 90%;
+  transition: all 0.5s;
+}
+
+.formFooter-text-wrapper a:hover {
+  color: #5057de;
+  transition: all 0.5s;
+}
+
+.formFooter-text-wrapper a:hover::before {
+  color: #5057de;
+  transition: all 0.5s;
+}
+
+.form-btn {
+  width: 154px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  background-color: #5A61ED;
+  color: #FFF;
+  font-family: PTSans;
+  font-weight: 200;
+  font-size: 14px;
+  line-height: 18px;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.form-btn:hover {
+  background-color: #5259e3;
+  transition: all 0.5s;
+}
